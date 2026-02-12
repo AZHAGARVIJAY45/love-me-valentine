@@ -44,13 +44,14 @@ function App() {
         <h1>
           <span>Love</span> Me Valentine
         </h1>
-      
+
         <div className="card">
-            <img
-          src="/cat.png"
-           alt="cute cat"
+          <img
+            src={`${process.env.PUBLIC_URL}/cat.png`}
+            alt="cat"
             className="card-img"
-/>
+          />
+
           {!showYes ? (
             <>
               <h2>Do you love me? 💖</h2>
@@ -104,35 +105,33 @@ function App() {
   }
 
   /* 😍 PAGE 3 */
- if (page === 3) {
-  return (
-    <div className="result-page ">
-      
-      <img
-        src="/img1.jpg"
-        alt="cute"
-        className="small-img"
-      />
+  if (page === 3) {
+    return (
+      <div className="result-page">
+        <img
+          src={`${process.env.PUBLIC_URL}/img1.jpg`}
+          alt="cute"
+          className="small-img"
+        />
 
-      <h1>Once again I knew it 😍</h1>
+        <h1>Once again I knew it 😍</h1>
 
-      <button className="main-btn" onClick={() => setPage(4)}>
-        Open gifts 🎁
-      </button>
-
-    </div>
-  );
-}
-
+        <button className="main-btn" onClick={() => setPage(4)}>
+          Open gifts 🎁
+        </button>
+      </div>
+    );
+  }
 
   /* 🎁 PAGE 4 */
   return (
     <div className="gift-page">
       <img
-        src="/img2.webp"
+        src={`${process.env.PUBLIC_URL}/img2.webp`}
         alt="cute"
         className="small-img"
       />
+
       <h1>For My Love 🎁</h1>
 
       <div className="gifts">
