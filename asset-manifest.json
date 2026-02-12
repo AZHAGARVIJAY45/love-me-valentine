@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/love-me-valentine/static/css/main.2478eeff.css",
+    "main.js": "/love-me-valentine/static/js/main.8307f1cb.js",
+    "static/js/453.26a0a4f1.chunk.js": "/love-me-valentine/static/js/453.26a0a4f1.chunk.js",
+    "index.html": "/love-me-valentine/index.html",
+    "main.2478eeff.css.map": "/love-me-valentine/static/css/main.2478eeff.css.map",
+    "main.8307f1cb.js.map": "/love-me-valentine/static/js/main.8307f1cb.js.map",
+    "453.26a0a4f1.chunk.js.map": "/love-me-valentine/static/js/453.26a0a4f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2478eeff.css",
+    "static/js/main.8307f1cb.js"
+  ]
+}
