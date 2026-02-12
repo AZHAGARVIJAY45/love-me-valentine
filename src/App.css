@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* 🌸 INTRO */
+/* 🌸 ALL PAGES – SAME BACKGROUND */
 .intro,
 .app,
 .result-page,
@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-/* Animations */
+/* 🌸 FADE ANIMATIONS */
 .fade {
   animation: fadeIn 1.5s ease;
 }
@@ -38,7 +38,7 @@ body {
   }
 }
 
-/* Button */
+/* 🌸 MAIN BUTTON */
 .main-btn {
   margin-top: 25px;
   padding: 15px 35px;
@@ -48,14 +48,19 @@ body {
   cursor: pointer;
   background: white;
   color: #ff5a8a;
+  transition: transform 0.2s ease;
 }
 
-/* Title highlight */
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+/* 🌸 TITLE HIGHLIGHT */
 h1 span {
   color: #9cff57;
 }
 
-/* Card */
+/* 💌 CARD */
 .card {
   background: white;
   color: black;
@@ -65,18 +70,20 @@ h1 span {
   width: 350px;
 }
 
+/* CARD IMAGE */
 .card-img {
   width: 200px;
   margin-bottom: 15px;
 }
 
-/* Buttons */
+/* 💖 BUTTON CONTAINER */
 .btns {
   margin-top: 20px;
   position: relative;
   height: 70px;
 }
 
+/* COMMON BUTTON */
 button {
   border-radius: 50px;
   padding: 14px 26px;
@@ -84,10 +91,15 @@ button {
   cursor: pointer;
 }
 
+/* YES & NO BUTTON */
 .yes,
 .no {
   background: #ff5a8a;
   color: white;
+}
+
+.yes:hover {
+  transform: scale(1.08);
 }
 
 .no {
@@ -95,22 +107,10 @@ button {
   right: 0;
 }
 
-/* Text effects */
+/* 💕 YES TEXT */
 .yes-text {
   animation: pop 0.6s ease;
   color: #ff4d6d;
-}
-
-.quote {
-  font-size: 18px;
-  margin: 8px 0;
-}
-
-.no-msg {
-  margin-top: 12px;
-  color: #ff4d6d;
-  font-size: 18px;
-  animation: shake 0.4s;
 }
 
 @keyframes pop {
@@ -124,26 +124,49 @@ button {
   }
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-8px);
-  }
-  50% {
-    transform: translateX(6px);
-  }
-  75% {
-    transform: translateX(-6px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+/* 💬 QUOTES */
+.quote {
+  font-size: 18px;
+  margin: 8px 0;
+  animation: fadeIn 1s ease;
 }
 
-/* Images on page 3 & 4 */
+/* 😢 NO MESSAGE */
+.no-msg {
+  margin-top: 12px;
+  color: #ff4d6d;
+  font-size: 18px;
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+/* 😍 PAGE 3 & 4 IMAGES */
 .small-img {
   width: 220px;
   margin-bottom: 20px;
+}
+
+/* 🎁 GIFTS */
+.gifts {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.gift {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gift:hover {
+  transform: scale(1.3) rotate(8deg);
 }
